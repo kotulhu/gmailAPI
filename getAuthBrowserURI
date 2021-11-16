@@ -1,0 +1,10 @@
+#!/bin/bash
+client_id="xxxxxxx" # ID пользователя Gmail API
+client_secret="xxx"	# секретный ключ пользователя Gmail API
+redirect_uri='https://example.com/eoauth/' # видимый извне ресурс, на который будет происходить перенаправление после авторизации
+scope="https://mail.google.com/" # видимость доступов
+client_email="user@gmail.com" # емейл своего пользователя Gmail
+url="https://accounts.google.com/o/oauth2/auth?client_id=$client_id&redirect_uri="$redirect_uri"&scope=$scope&response_type=code&include_granted_scopes=true&access_type=offline&login_hint="$client_email"&prompt=consent&state=qwerty" # url для авторизации через браузер
+
+echo "$uri"
+exit 1
